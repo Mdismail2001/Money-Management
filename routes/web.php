@@ -26,7 +26,7 @@ Route::post('send-otp', [AuthController::class, 'sendOtpForm'])->name('send-otp'
 Route::post('verify-otp', [AuthController::class, 'verifyOtp'])->name('verify-otp');
 
 
-// Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
 Route::post('/create-user', [AuthController::class, 'createUser'])->name('create-user');
 
 // Invite registration (must be public)

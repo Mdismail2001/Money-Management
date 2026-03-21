@@ -11,6 +11,7 @@ class Community extends Model
         'min_amount',
         'total_amount',
         'banking_info', // allow mass assignment
+        'notice',
     ];
     // Cast JSON to array automatically
     protected $casts = [
